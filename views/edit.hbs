@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Form Project</title>
+    <link rel="stylesheet" href="/asset/css/main-.css">
+    <link rel="stylesheet" href="/asset/css/form-project.css">
+    <link rel="stylesheet" href="/asset/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(236, 236, 236); font-family: 'Akshar', sans-serif;">
+
+
+<div class="form-ex d-flex  flex-column mt-5 align-items-center" style="height:800px; width: 67%;  margin: 20px auto;">
+    <h2 style="font-size: 26px;">EDIT PROJECT</h2>
+    <form action="" method="post"class="font-weight-400  d-flex flex-column justify-content-evenly form-addition">
+        <div class="name-form  d-flex flex-column">
+            <label for="name" class="margin-top">Project Name</label>
+            <input type="text" name="name" id="name" class="shadow bg-body rounded" value="{{project.title}}">
+        </div>
+        <div class="date-form d-flex justify-content-evenly">
+            <div class="start-date date" >
+                <label for="start-date" class="margin-top">Start Date</label>
+                <input type="date"  name="start-date" id="start-date" style="width: 210px;" value="{{project.startDate}}">
+            </div>
+            <div class="end-date date" >
+                <label for="end-date" class="margin-top">End Date</label>
+                <input type="date" name="end-date" id="end-date" style="width: 230px;" value="{{project.endDate}}">
+            </div>
+        </div>
+        <div class="description-form column d-flex flex-column">
+            <label for="description" class="margin-top">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10">{{project.desc}}</textarea>
+        </div>
+        <p class="font-weight-400" style="margin-bottom: -10px;">Technologies</p>
+        <div class="technologies-form column d-flex flex-row" style="margin-left: -10px;">
+            <!-- <label for="technologies">Technologies</label> -->
+            <div class="checkbox-first-form row-form ">
+                <label class="container">
+                    <input type="checkbox" value="0" class="checkbox">
+                    <span class="checkmark"></span>
+                    Node Js
+                </label>
+                <label class="container" >
+                    <input type="checkbox" value="2"  class="checkbox"> 
+                    <span class="checkmark"></span>
+                    React Js
+                </label>
+            </div>
+            <div class="checkbox-second-form row-form d-flex flex-column justify-content-between">
+                <label class="container" > 
+                    <span class="checkmark" style="background-color: aqua;"></span>
+                    <input type="checkbox" value="1"  class="checkbox">
+                    Vue Js</label>
+                <label class="container">
+                    <input type="checkbox" value="3"  class="checkbox shadow bg-body rounded">
+                    <span class="checkmark"></span>
+                    Python
+                </label>
+            </div>
+        </div>
+        <div class="upload-image-form d-flex flex-column">
+            <div class="file-field border-2 bg-white d-flex align-items-baseline justify-content-between pe-3 shadow bg-body rounded">
+                <input type="file" id="upload" class="upload-image" name="upload">
+                <!-- <label for="upload" class="margin-top image-upload">Upload Image</label> -->
+                <i class="fa-solid fa-arrow-up-from-bracket upload-icon"></i>
+            </div>
+         
+           
+        </div>
+        <button type="submit" onclick="data(event)"class="button-submit" id="submit">Save</button>
+    </form>
+</div>
+<!-- <div id="project-field" class="project-field">
+        <h2 class="project-title">MY PROJECT</h2>
+        <div class="ul-card" id="ul-card">
+            <div class="card">
+                <div class="card-image">
+                    <img src="" alt="">
+                </div>
+                <div class="card-info">
+                    <div class="title-duration">
+                        <h3 class="title" id="tittle">Membuat Website Sederhana</h3>
+                        <p class="duration">Durasi: 2 Minggu</p>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe reiciendis ab. Officiis maxime maiores ducimus ipsam, placeat illo dolorum cum eveniet? Esse saepe minus cumque natus ipsam eligendi numquam!
+                    </div>
+                    <div class="card-icon">
+                        <ul>
+                            <i class="fa-brands fa-2x fa-vuejs"></i>
+                            <i class="fa-brands fa-2x fa-node-js"></i>
+                            <i class="fa-brands fa-2x fa-python"></i>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="card-btn delete-btn">Delete</button>
+                        <button type="button" class="card-btn edit-btn" href>Edit</button>
+                    </div>
+                    <div class="time-upload">
+                        <p>Diupload 5 menit lalu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div> -->
+</div> 
+
+
+</body>
+<script src="/javascript/form.js"></script>
+</html>

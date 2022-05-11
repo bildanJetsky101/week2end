@@ -1,0 +1,18 @@
+.contact-me-btn{
+    background-color: rgb(59, 59, 59);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.contact-me-btn a {
+    color : white;
+    text-decoration: none;
+    margin: auto;
+}
+/* form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+} */

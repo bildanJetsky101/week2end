@@ -1,0 +1,28 @@
+.card-btn{
+    width: 48%;
+    height: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+} 
+
+.edit-btn {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    border: 2px solid rgb(71, 71, 71);
+}
+
+.edit-btn:hover{
+    color:rgb(29, 29, 29) ;
+}
+
+.delete-btn{
+    background-color: tomato;
+    border: 1px solid tomato;
+    color: white;
+}
+
+ul i {
+    padding: 0 5px;
+}

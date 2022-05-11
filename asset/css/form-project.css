@@ -1,0 +1,79 @@
+.contact-me-btn{
+    background-color: rgb(43, 43, 43);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contact-me-btn a:hover{
+    color: white;
+}
+
+.contact-me-btn a {
+    color : white;
+    text-decoration: none;
+    margin: auto;
+    font-size: 13px;
+}
+
+
+
+.form-addition{
+    padding: 15px 0px;
+    height: 100%;
+    width: 50%;
+}
+
+#startDate, #endDate, #name{
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 10px 15px rgb(211, 211, 211);
+    padding: 7px;
+}
+
+#description {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 10px 15px rgb(211, 211, 211);
+}
+
+::-webkit-file-upload-button{
+    background-color: rgb(218, 218, 218);
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    color: rgb(44, 44, 44);
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: rgb(141, 141, 141);
+}
+
+.file-button{
+    height: 30px;
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+.button-submit{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left:auto ;
+    width: 108px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    font-size: 15px;
+}
+
+.button-submit:hover{
+    background-color: rgb(56, 56, 56);
+}
